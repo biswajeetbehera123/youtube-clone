@@ -1,4 +1,8 @@
 import { AppContext } from './context/contextApi';
+import Header from './components/Header';
+import Feed from './components/Feed'
+import SearchResult from './components/SearchResult'
+import VideoDetails from './components/VideoDetails'
 
 function App() {
   return (
