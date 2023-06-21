@@ -20,9 +20,12 @@ function Header() {
   const navigate = useNavigate();
 
   const searchQueryHandler = (event) => {
-    if ((event?.key === "Enter" || event === "searchButton") && searchQuery?.length > 0) {
-      navigate(`/searchResult/${searchQuery}`)
-    }
+    if (
+      (event?.key === "Enter" || event === "searchButton") &&
+      searchQuery?.length > 0
+  ) {
+      navigate(`/searchResult/${searchQuery}`);
+  }
   }
 
   const mobileMenuToggle = () => {
