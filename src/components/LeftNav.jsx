@@ -26,7 +26,7 @@ const LeftNav = () => {
 
     return (
         <div
-            className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
+            className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-white absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
                 mobileMenu ? "translate-x-[0px]" : ""
             }`}
         >
@@ -43,18 +43,18 @@ const LeftNav = () => {
                                 }}
                                 className={`${
                                     selectedCategory === item.name
-                                        ? "bg-white/[0.15]"
+                                        ? "bg-black/[0.15]"
                                         : ""
                                 }`}
                             />
                             {item.divider && (
-                                <hr className="my-2 border-white/[0.2]" />
+                                <hr className="my-2 border-black/[0.2]" />
                             )}
                         </React.Fragment>
                     );
                 })}
                 <hr className="my-2 border-white/[0.2]" />
-                <div className="text-white/[0.5] text-[12px]">
+                <div className="text-black/[0.5] text-[12px]">
                     Clone by: Biswajeet Behera
                 </div>
             </div>

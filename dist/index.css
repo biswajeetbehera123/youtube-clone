@@ -60,6 +60,8 @@ body {
     -webkit-font-feature-settings: normal;
             font-feature-settings: normal;
     /* 5 */
+    background-color: white;
+    color: black;
   }
   
   /*
